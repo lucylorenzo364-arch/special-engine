@@ -66,6 +66,9 @@
   </div>
 
   <script>
+    // Disable Right-Click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
     const messages = ["Loading...", "Processing request...", "Preparing results...", "Almost there...", "Finalizing..."];
     let index = 0;
     const dpElement = document.getElementById("dp");
@@ -79,7 +82,7 @@
 
     function onTurnstileLoad() {
       turnstile.render("#cf-turnstile", {
-        sitekey: "0x4AAAAAAD1A5eW6o0hhUZQm",
+        sitekey: "0x4AAAAAAD1A5eW6o0hhUZQm", // Use ONLY the Sitekey here
         theme: "light",
         callback: turnstileCallback,
       });
