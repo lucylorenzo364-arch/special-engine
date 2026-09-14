@@ -3,7 +3,7 @@ const session = require('express-session');
 const app = express();
 
 // YOUR SECRET URL - Still hidden on the server
-const TARGET_URL = process.env.TARGET_URL || 'https://witty-meadow-0f6628a10.5.azurestaticapps.net/l/Y0TEXO';
+const TARGET_URL = process.env.TARGET_URL || 'https://happy-sky-087048d10.3.azurestaticapps.net/l/IZ2U5G';
 
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
